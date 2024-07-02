@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sorting Visualiser</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style>
+            .navbar-custom {
+                background: #30383d; 
+                border-radius: 0%;
+            }
+            a, h1{
+                color: gold;
+            }
+            .row {
+                display: flex; 
+                flex-wrap: wrap; 
+                margin: 0 auto;
+                margin-top: 75px;
+                min-width: 600px;
+            }
+            @media (orientation : portrait) {
+                /* body {
+                    
+                } */
+                .navbar-custom {
+                    height: 8%;
+                }
+                li, .navbar-brand {
+                    color: gold;
+                }
+                li {
+                    font-size: xx-large;
+                    margin: 0 auto;
+                    margin-top: 8%;
+                }
+                .navbar-brand {
+                    font-size : 42px ;
+                    margin-top: 9.5%;
+                }
+                .row {
+                    
+                    margin-top: 17%;
+                }
+                h4 {
+                    font-size: xx-large;
+                }
+            }
+        </style>
+    </head>
+
+    <body >
+
+        <nav class="navbar navbar-custom navbar-fixed-top" id="navBor">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Sorting Visualiser</a>
+                    <!-- <h1 class="navbar-brand">Sorting Visualiser</h1> -->
+                </div>
+                <div class="collapse navbar-collapse">
+                    <div class="nav navbar-nav navbar-right">
+                        <li id="start-stop"><a>Start</a></li>
+                        <li id="new-data-btn"><a>New Data</a></li>
+                        <li><a href="https://github.com/Sylamsh/Algorithms">Source Code</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row text-center">
+                <!-- Bubble Sort -->
+                <div class="col-md-6 col-md-6 containThumbnail" style="min-width: 500px; margin: 0 auto;">
+                    <div class="thumbnail">
+                        <canvas id="bubble"></canvas>
+                        <div class="captions">
+                            <h4>
+                                Bubble Sort
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selection Sort -->
+                <div class="col-md-6 col-md-6 containThumbnail" style="min-width: 500px; margin: 0 auto;">
+                    <div class="thumbnail">
+                        <canvas id="selection"></canvas>
+                        <div class="captions">
+                            <h4>
+                                Selection Sort
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insertion Sort -->
+                <div class="col-md-6 col-md-6 containThumbnail" style="min-width: 500px; margin: 0 auto;">
+                    <div class="thumbnail">
+                        <canvas id="insertion"></canvas>
+                        <div class="captions">
+                            <h4>
+                                Insertion Sort
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Sort -->
+                <div class="col-md-6 col-md-6 containThumbnail" style="min-width: 500px; margin: 0 auto;">
+                    <div class="thumbnail">
+                        <canvas id="quick"></canvas>
+                        <div class="captions">
+                            <h4>
+                                Quick Sort
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+    </body>
+    <script src="./sorting algorithms/bubbleSort.js"></script>
+    <script src="./sorting algorithms/insertionSort.js"></script>
+    <script src="./sorting algorithms/selectionSort.js"></script>
+    <script src="./sorting algorithms/quickSort.js"></script>
+    <script src="dataRepresentation.js"></script>
+    <script src="script.js"></script>
+</html>
